@@ -239,11 +239,30 @@ h1, h2, h3, h4, h5,
 .site-logo {
   position: relative;
   font-weight: 900;
-  font-size: 1.3rem; }
-  .site-logo span {
-    font-size: 2rem; }
-  .site-logo a {
-    color: #000; }
+  font-size: 0.8rem; /* Smaller font size for the logo text */
+  width: 30px; /* Small width to make the logo square */
+  height: 30px; /* Same height as width to make it square */
+  display: inline-block; /* Ensures it stays inline in the navbar */
+  overflow: hidden; /* Ensures any overflowing content is clipped */
+}
+
+.site-logo span {
+  font-size: 0.7rem; /* Adjust text size to fit within the small square */
+  line-height: 30px; /* Vertically align text */
+  display: block;
+  text-align: center; /* Center-align the text horizontally */
+}
+
+.site-logo a {
+  color: #000;
+  text-decoration: none; /* Ensure clean links */
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center; /* Center the content inside the logo box */
+  line-height: 30px; /* Center the content vertically */
+}
+
 
 .site-navbar {
   margin-bottom: 0px;
